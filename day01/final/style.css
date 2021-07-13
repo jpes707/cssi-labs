@@ -9,8 +9,11 @@ body {
 section {
   padding: 20px;
   margin: 20px;
-  background-color: #d5e1eb;
-  min-height: 20px;
+  background-color: #e5c7ff;
+}
+
+#greeting {
+  background-color: #59e5e5;
 }
 
 h1 {
@@ -30,7 +33,6 @@ div {
   color: white;
   display: flex;
   flex-direction: column;
-  min-height: 20px;
 }
 
 h2 {
@@ -57,5 +59,10 @@ img {
 }
 
 footer {
+  padding: 30px;
+  padding-top: 20px;
+  margin-bottom: -20px;
+  margin-left: -40px;
+  margin-right: -40px;
   background-color: #7cbdeb;
 }
