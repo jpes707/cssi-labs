@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dog List!</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Dog List!
+        </h1>
+        <p class="subtitle">
+          Listing dogs since Sunday night &#128540;
+        </p>
+
+        <section>
+          <div class="field">
+            <label class="label">Name</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Dog's name?" id="dog-name" />
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Image URL</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="http://....." id="dog-url" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Goodness Level</label>
+            <div class="control">
+              <div class="select">
+                <select id="dog-goodness-level">
+                  <option>Improving</option>
+                  <option>Good</option>
+                  <option>Very Good</option>
+                  <option>The Best!</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Notes</label>
+            <div class="control">
+              <textarea class="textarea" placeholder="What do you want to remember about this dog?" id="dog-note"></textarea>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link" id="submit">Submit</button>
+            </div>
+          </div>
+        </section>
+        <section id="dog-list">
+        </section>
+      </div>
+    </section>
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guessing Game!</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Guessing Game!
+        </h1>
+        <p class="subtitle">
+          Try different options until you learn the pattern.
+        </p>
+        <div class="select">
+          <select id="guess">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+          </select>
+        </div>
+        <div class="notification is-danger hidden" id="error">
+          <button class="delete" id="error-close"></button>
+          <div id="error-text"></div>
+        </div>
+        <div class="notification is-success hidden" id="success">
+          You did it!
+        </div>
+      </div>
+    </section>
+    <!-- Import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </body>
+</html>
